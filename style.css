@@ -1,0 +1,53 @@
+body {
+    margin-bottom: 60px;
+}
+#first-cont{
+    background-color:rgb(245,203,202);
+    color: black;
+}
+.nav-link{
+
+    color:white;
+}
+
+.Image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+.poem{
+    margin-left: 50px;
+}
+.poem ol{
+    list-style-type: none;
+}
+.poem li{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-bottom: 0.2em;
+}
+/* 
+The following was taken from
+https://mamclain.com/?page=Blog_Programing_Web_CSS_CSS_Poetry_Style
+It increase the fontsize and adding padding to first letter by
+first find the first child and the going further and picking the first letter
+of that first child. 
+*/ 
+.poem ol li:first-child::first-letter{
+    font-size: 25px;
+    font-size: italic;
+    padding-right: 3px;
+}
+.poem ol li:not(:first-child){
+    margin-left:20px ;
+}
+footer{
+    margin-bottom: 0;
+    text-align: center;
+    background-color:rgb(245,203,202);
+    color: black;
+}
+#footer{
+    position: relative;
+}
